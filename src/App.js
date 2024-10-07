@@ -38,8 +38,8 @@ const App = () => {
     setExpenses((preExpenses) => {
       return [expense, ...preExpenses];
     });
-    // console.log('In App.js');
-// console.log(expense);
+    //console.log('In App.js');
+    //console.log(expense);
 
   };
 
