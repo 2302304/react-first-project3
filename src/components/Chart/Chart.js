@@ -7,6 +7,10 @@ const Chart = (props) => {
 
   const dataPointValues = props.dataPoints.map((dataPoint) => dataPoint.value);
   const totalMaximum = Math.max(...dataPointValues);
+
+  //console.log(dataPointValues);  data välittyy Chart-komponentille oikein(pylväsdiagrammin vian etsintää)
+  //console.log(totalMaximum);    ongelman ratkaisu löytyi chartBar.js luokkien nimeämisestä(css tyyleistä)
+
   
   return (
     <div className='chart'>
